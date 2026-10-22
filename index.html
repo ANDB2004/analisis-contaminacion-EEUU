@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGEMPA - Gestión Ambiental</title>
+    <link class="styles" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <!-- Menú Superior Resguardado -->
+        <header class="main-header">
+            <div class="logo">
+                <i class="fa-solid fa-droplet icon-brand"></i> FIGEMPA
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="active">Inicio</a>
+                <a href="#">Introducción</a>
+                <!-- Enlaces respaldados:
+                <a href="#">RStudio</a>
+                <a href="#">Contacto</a> 
+                -->
+            </nav>
+        </header>
+
+        <!-- Título Principal Limpio (Sin Efectos Neón) -->
+        <section class="hero-section">
+            <h1 class="flat-title">ANÁLISIS ESTADÍSTICO DE LA CONTAMINACIÓN EN BRASIL</h1>
+            <p class="subtitle">Modelado analítico y análisis de datos hidroquímicos para la gestión ambiental</p>
+        </section>
+
+        <!-- NUEVA SECCIÓN: Rectángulo de Advertencia Académica con Diseño -->
+        <section class="academic-notice-container">
+            <div class="warning-badge">
+                <i class="fa-solid fa-triangle-exclamation"></i> ADVERTENCIA ACADÉMICA
+            </div>
+            <p class="warning-text">
+                Este portal web y los modelos analíticos integrados corresponden a un proyecto de investigación estrictamente institucional. Las simulaciones estadístico-ambientales, los conjuntos de datos hidroquímicos recopilados y las predicciones algorítmicas expuestas se presentan con fines educativos y de validación metodológica para la academia.
+            </p>
+        </section>
+
+        <!-- Módulos Hexagonales Independientes y Alineados -->
+        <main class="modules-horizontal-row">
+            
+            <!-- Módulo 1 -->
+            <a href="descriptiva.html" class="hexagon-card-link">
+                <div class="hexagon-outer outline-green">
+                    <div class="hexagon-inner">
+                        <i class="fa-solid fa-chart-simple text-green"></i>
+                        <h3>Estadística Descriptiva</h3>
+                        <p>Métricas de control de agua.</p>
+                        <span class="btn-action border-green">ACCEDER</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Módulo 2 -->
+            <a href="inferencial.html" class="hexagon-card-link">
+                <div class="hexagon-outer outline-cyan">
+                    <div class="hexagon-inner">
+                        <i class="fa-solid fa-calculator text-cyan"></i>
+                        <h3>Estadística Inferencial</h3>
+                        <p>Pruebas de hipótesis.</p>
+                        <span class="btn-action border-cyan">ACCEDER</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Módulo 3 -->
+            <a href="regresion.html" class="hexagon-card-link">
+                <div class="hexagon-outer outline-green">
+                    <div class="hexagon-inner">
+                        <i class="fa-solid fa-chart-line text-green"></i>
+                        <h3>Modelos de Regresión</h3>
+                        <p>Predicción de contaminantes.</p>
+                        <span class="btn-action border-green">ACCEDER</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Módulo 4 -->
+            <a href="machine-learning.html" class="hexagon-card-link">
+                <div class="hexagon-outer outline-cyan">
+                    <div class="hexagon-inner">
+                        <i class="fa-solid fa-microchip text-cyan"></i>
+                        <h3>Machine Learning</h3>
+                        <p>Minería y modelado en RStudio.</p>
+                        <span class="btn-action border-cyan">ACCEDER</span>
+                    </div>
+                </div>
+            </a>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
