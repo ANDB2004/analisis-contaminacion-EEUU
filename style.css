@@ -73,12 +73,12 @@ body {
 
 .subtitle {
     color: #a0aec0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* DISEÑO DEL NUEVO RECTÁNGULO DE ADVERTENCIA ACADÉMICA */
 .academic-notice-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto 50px auto;
     padding: 24px 30px;
     background: rgba(22, 30, 38, 0.6);
@@ -93,7 +93,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 12px;
+    font-size: 30px;
     font-weight: 700;
     color: #00f3ff;
     letter-spacing: 1px;
@@ -101,7 +101,7 @@ body {
 }
 
 .warning-text {
-    font-size: 13.5px;
+    font-size: 18px;
     color: #cbd5e1;
     line-height: 1.6;
     text-align: justify;
