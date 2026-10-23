@@ -4,46 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIGEMPA - Gestión Ambiental</title>
-    <link class="styles" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <div class="dashboard-container">
-        
-        <!-- Menú Superior Resguardado -->
+
+        <!-- Encabezado: logo a la izquierda, menú en la barra verde -->
         <header class="main-header">
             <div class="logo">
                 <i class="fa-solid fa-droplet icon-brand"></i> FIGEMPA
             </div>
             <nav class="nav-menu">
-    <a href="index.html" class="active">Inicio</a>
-    <a href="#">Introducción</a>
-    <a href="objetivos.html">Objetivos</a>
-    <a href="contacto.html">Contáctanos</a>
-</nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="introduccion.html">Introducción</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
         </header>
 
-        <!-- Título Principal Limpio (Sin Efectos Neón) -->
-        <section class="hero-section">
-            <h1 class="flat-title">ANÁLISIS ESTADÍSTICO DE LA CONTAMINACIÓN EN BRASIL</h1>
-            <p class="subtitle">Modelado analítico y análisis de datos hidroquímicos para la gestión ambiental</p>
-        </section>
+        <!-- Portada: texto + advertencia a la izquierda, foto a la derecha -->
+        <section class="hero-split">
+            <div class="hero-text">
+                <a class="pill" href="https://www.uce.edu.ec/" target="_blank" rel="noopener"><i class="fa-solid fa-building-columns"></i> Universidad Central del Ecuador</a>
+                <h1 class="hero-title">ANALISIS ESTADISTICO DE LA CALIDAD DEL AIRE EN <em>EE.UU</em></h1>
+                <p class="subtitle">Modelado analítico y análisis de datos hidroquímicos para la gestión ambiental</p>
 
-        <!-- NUEVA SECCIÓN: Rectángulo de Advertencia Académica con Diseño -->
-        <section class="academic-notice-container">
-            <div class="warning-badge">
-                <i class="fa-solid fa-triangle-exclamation"></i> ADVERTENCIA ACADÉMICA
+                <div class="academic-notice-container">
+                    <div class="warning-badge">
+                        <i class="fa-solid fa-triangle-exclamation"></i> ADVERTENCIA ACADÉMICA
+                    </div>
+                    <p class="warning-text">
+                        Este proyecto y la información presentada tienen exclusivamente fines académicos y educativos. El contenido aquí expuesto se ha desarrollado con el propósito de apoyar procesos de aprendizaje, análisis y reflexión, sin perseguir objetivos comerciales ni constituir asesoría profesional. Cualquier dato, ejemplo o referencia utilizada sirve únicamente como material de estudio y no debe interpretarse como una recomendación formal para la toma de decisiones en contextos reales. El uso de esta presentación debe realizarse en el marco de actividades formativas, respetando siempre los derechos de autor y las normas éticas y académicas vigentes.
+                    </p>
+                </div>
             </div>
-            <p class="warning-text">
-                Este portal web y los modelos analíticos integrados corresponden a un proyecto de investigación estrictamente institucional. Las simulaciones estadístico-ambientales, los conjuntos de datos hidroquímicos recopilados y las predicciones algorítmicas expuestas se presentan con fines educativos y de validación metodológica para la academia.
-            </p>
+
+            <div class="hero-photo">
+                <img src="img/uce.jpg" alt="Facultad FIGEMPA, Universidad Central del Ecuador">
+            </div>
         </section>
 
-        <!-- Módulos Hexagonales Independientes y Alineados -->
+        <!-- Módulos hexagonales -->
         <main class="modules-horizontal-row">
-            
-            <!-- Módulo 1 -->
+
             <a href="descriptiva.html" class="hexagon-card-link">
                 <div class="hexagon-outer outline-green">
                     <div class="hexagon-inner">
@@ -55,7 +59,6 @@
                 </div>
             </a>
 
-            <!-- Módulo 2 -->
             <a href="inferencial.html" class="hexagon-card-link">
                 <div class="hexagon-outer outline-cyan">
                     <div class="hexagon-inner">
@@ -67,7 +70,6 @@
                 </div>
             </a>
 
-            <!-- Módulo 3 -->
             <a href="regresion.html" class="hexagon-card-link">
                 <div class="hexagon-outer outline-green">
                     <div class="hexagon-inner">
@@ -79,7 +81,6 @@
                 </div>
             </a>
 
-            <!-- Módulo 4 -->
             <a href="machine-learning.html" class="hexagon-card-link">
                 <div class="hexagon-outer outline-cyan">
                     <div class="hexagon-inner">
@@ -92,30 +93,27 @@
             </a>
 
         </main>
-        <!-- SECCIÓN: Motivación del proyecto -->
-<section class="motivation-section">
-    <div class="motivation-image">
-        <img src="img/uce.jpg" alt="Universidad Central del Ecuador, FIGEMPA">
-    </div>
-    <div class="motivation-content">
-        <div class="motivation-badge">
-            <i class="fa-solid fa-lightbulb"></i> MOTIVACIÓN DEL PROYECTO
-        </div>
-        <h2>Datos para entender y cuidar el ambiente</h2>
-        <p>
-            Este proyecto nace del interés por aplicar la estadística a problemas ambientales reales,
-            usando datos abiertos de Brasil para practicar el análisis, la inferencia y el modelado.
-        </p>
-        <ul>
-            <li>Aplicar la estadística a un problema ambiental real.</li>
-            <li>Trabajar con datos reales obtenidos de Kaggle.</li>
-            <li>Aprender análisis y modelado con herramientas como RStudio.</li>
-        </ul>
-        <p class="motivation-footer">
-            Universidad Central del Ecuador · FIGEMPA · Ingeniería Ambiental
-        </p>
-    </div>
-</section>
+
+        <!-- Motivación del proyecto -->
+        <section class="motivation-section">
+            <div class="motivation-badge">
+                <i class="fa-solid fa-lightbulb"></i> MOTIVACIÓN DEL PROYECTO
+            </div>
+            <h2>Datos para entender y cuidar el ambiente</h2>
+            <p>
+                Este proyecto nace del interés por aplicar la estadística a problemas ambientales reales,
+                usando datos abiertos de Brasil para practicar el análisis, la inferencia y el modelado.
+            </p>
+            <ul>
+                <li>Aplicar la estadística a un problema ambiental real.</li>
+                <li>Trabajar con datos reales obtenidos de Kaggle.</li>
+                <li>Aprender análisis y modelado con herramientas como RStudio.</li>
+            </ul>
+            <p class="motivation-footer">
+                Universidad Central del Ecuador · FIGEMPA · Ingeniería Ambiental
+            </p>
+        </section>
+
     </div>
 
     <script src="script.js"></script>
