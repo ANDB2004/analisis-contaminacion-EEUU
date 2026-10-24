@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIGEMPA - Gestión Ambiental</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <div class="dashboard-container">
+    <div class="dashboard-container home">
 
-        <!-- Encabezado: logo a la izquierda, menú en la barra verde -->
-        <header class="main-header">
+        <!-- Encabezado: logo a la izquierda, menú en la barra superior -->
+        <header class="main-header header-flush">
             <div class="logo">
                 <i class="fa-solid fa-droplet icon-brand"></i> FIGEMPA
             </div>
@@ -23,12 +23,9 @@
             </nav>
         </header>
 
-        <!-- Portada: texto + advertencia a la izquierda, foto a la derecha -->
-        <section class="hero-split">
-            <div class="hero-text">
-                <a class="pill" href="https://www.uce.edu.ec/" target="_blank" rel="noopener"><i class="fa-solid fa-building-columns"></i> Universidad Central del Ecuador</a>
-                <h1 class="hero-title">ANALISIS ESTADISTICO DE LA CALIDAD DEL AIRE EN <em>EE.UU</em></h1>
-                <p class="subtitle">Explora 24 años de evolución ambiental en Estados Unidos a través de más de 665,000 registros sobre contaminantes críticos como NO₂ , SO₂, CO y O₃ , optimizados para la investigación y el análisis estadístico actualizado.</p>
+        <!-- Portada: advertencia arriba, título debajo -->
+        <div class="band band-hero">
+            <section class="hero-stack">
 
                 <div class="academic-notice-container">
                     <div class="warning-badge">
@@ -38,121 +35,128 @@
                         Este proyecto y la información presentada tienen exclusivamente fines académicos y educativos. El contenido aquí expuesto se ha desarrollado con el propósito de apoyar procesos de aprendizaje, análisis y reflexión, sin perseguir objetivos comerciales ni constituir asesoría profesional. Cualquier dato, ejemplo o referencia utilizada sirve únicamente como material de estudio y no debe interpretarse como una recomendación formal para la toma de decisiones en contextos reales. El uso de esta presentación debe realizarse en el marco de actividades formativas, respetando siempre los derechos de autor y las normas éticas y académicas vigentes.
                     </p>
                 </div>
-            </div>
 
-            <div class="hero-photo">
-                <img src="img/uce.jpg" alt="Facultad FIGEMPA, Universidad Central del Ecuador">
-            </div>
-        </section>
+                <div class="hero-text">
+                    <a class="pill" href="https://www.uce.edu.ec/" target="_blank" rel="noopener"><i class="fa-solid fa-building-columns"></i> Universidad Central del Ecuador</a>
+                    <h1 class="hero-title">ANÁLISIS ESTADÍSTICO DE LA CALIDAD DEL AIRE EN <em>EE.UU</em></h1>
+                    <p class="subtitle">Explora 24 años de evolución ambiental en Estados Unidos a través de más de 665,000 registros sobre contaminantes críticos como NO₂, SO₂, CO y O₃, optimizados para la investigación y el análisis estadístico actualizado.</p>
+                </div>
+
+            </section>
+        </div>
 
         <!-- Módulos hexagonales -->
-        <main class="modules-horizontal-row">
+        <div class="band band-hex">
+            <main class="modules-horizontal-row">
 
-            <a href="descriptiva.html" class="hexagon-card-link">
-                <div class="hexagon-outer outline-green">
-                    <div class="hexagon-inner">
-                        <i class="fa-solid fa-chart-simple text-green"></i>
-                        <h3>Estadística Descriptiva</h3>
-                        <p>Métricas de control de agua.</p>
-                        <span class="btn-action border-green">ACCEDER</span>
+                <a href="descriptiva.html" class="hexagon-card-link">
+                    <div class="hexagon-outer outline-green">
+                        <div class="hexagon-inner">
+                            <i class="fa-solid fa-chart-simple text-green"></i>
+                            <h3>Estadística Descriptiva</h3>
+                            <p>Métricas de control de agua.</p>
+                            <span class="btn-action border-green">ACCEDER</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <a href="inferencial.html" class="hexagon-card-link">
-                <div class="hexagon-outer outline-cyan">
-                    <div class="hexagon-inner">
-                        <i class="fa-solid fa-calculator text-cyan"></i>
-                        <h3>Estadística Inferencial</h3>
-                        <p>Pruebas de hipótesis.</p>
-                        <span class="btn-action border-cyan">ACCEDER</span>
+                <a href="inferencial.html" class="hexagon-card-link">
+                    <div class="hexagon-outer outline-cyan">
+                        <div class="hexagon-inner">
+                            <i class="fa-solid fa-calculator text-cyan"></i>
+                            <h3>Estadística Inferencial</h3>
+                            <p>Pruebas de hipótesis.</p>
+                            <span class="btn-action border-cyan">ACCEDER</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <a href="regresion.html" class="hexagon-card-link">
-                <div class="hexagon-outer outline-green">
-                    <div class="hexagon-inner">
-                        <i class="fa-solid fa-chart-line text-green"></i>
-                        <h3>Modelos de Regresión</h3>
-                        <p>Predicción de contaminantes.</p>
-                        <span class="btn-action border-green">ACCEDER</span>
+                <a href="regresion.html" class="hexagon-card-link">
+                    <div class="hexagon-outer outline-green">
+                        <div class="hexagon-inner">
+                            <i class="fa-solid fa-chart-line text-green"></i>
+                            <h3>Modelos de Regresión</h3>
+                            <p>Predicción de contaminantes.</p>
+                            <span class="btn-action border-green">ACCEDER</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <a href="machine-learning.html" class="hexagon-card-link">
-                <div class="hexagon-outer outline-cyan">
-                    <div class="hexagon-inner">
-                        <i class="fa-solid fa-microchip text-cyan"></i>
-                        <h3>Machine Learning</h3>
-                        <p>Minería y modelado en RStudio.</p>
-                        <span class="btn-action border-cyan">ACCEDER</span>
+                <a href="machine-learning.html" class="hexagon-card-link">
+                    <div class="hexagon-outer outline-cyan">
+                        <div class="hexagon-inner">
+                            <i class="fa-solid fa-microchip text-cyan"></i>
+                            <h3>Machine Learning</h3>
+                            <p>Minería y modelado en RStudio.</p>
+                            <span class="btn-action border-cyan">ACCEDER</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-        </main>
+            </main>
+        </div>
 
         <!-- Motivación del proyecto -->
-        <section class="motivation-section">
-            <div class="motivation-badge">
-                <i class="fa-solid fa-lightbulb"></i> MOTIVACIÓN DEL PROYECTO
-            </div>
-            <h2>Datos para entender y cuidar el ambiente</h2>
-            <p>
-                Este proyecto nace del interés por aplicar la estadística a problemas ambientales reales,
-                usando datos abiertos de EE.UU para practicar el análisis, la inferencia y el modelado.
-            </p>
-            <ul>
-                <li>Aplicar la estadística a un problema ambiental real.</li>
-                <li>Trabajar con datos reales obtenidos de Kaggle.</li>
-                <li>Aprender análisis y modelado con herramientas como RStudio.</li>
-            </ul>
-            <p class="motivation-footer">
-                Universidad Central del Ecuador · FIGEMPA · Ingeniería Ambiental
-            </p>
-        </section>
+        <div class="band band-mot">
+            <section class="motivation-section">
+                <div class="motivation-badge">
+                    <i class="fa-solid fa-lightbulb"></i> MOTIVACIÓN DEL PROYECTO
+                </div>
+                <h2>Datos para entender y cuidar el ambiente</h2>
+                <p>
+                    Este proyecto nace del interés por aplicar la estadística a problemas ambientales reales,
+                    usando datos abiertos de EE.UU para practicar el análisis, la inferencia y el modelado.
+                </p>
+                <ul>
+                    <li>Aplicar la estadística a un problema ambiental real.</li>
+                    <li>Trabajar con datos reales obtenidos de Kaggle.</li>
+                    <li>Aprender análisis y modelado con herramientas como RStudio.</li>
+                </ul>
+                <p class="motivation-footer">
+                    Universidad Central del Ecuador · FIGEMPA · Ingeniería Ambiental
+                </p>
+            </section>
+        </div>
 
         <!-- Sobre nosotros -->
-<div class="band band-about">
-    <section class="about-section">
-        <div class="about-photo">
-            <img src="img/facultad.jpg" alt="Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental, UCE">
+        <div class="band band-about">
+            <section class="about-section">
+                <div class="about-photo">
+                    <img src="img/facultad.jpg" alt="Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental, UCE">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre nosotros</h2>
+                    <p>
+                        Estudiantes pertenecientes al tercer semestre de la carrera de Ingeniería Ambiental en la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental (FIGEMPA) de la Universidad Central del Ecuador. Este trabajo de investigación se desarrolla dentro del marco académico de la asignatura de Estadística y Probabilidades, teniendo como propósito principal la aplicación de metodologías cuantitativas y el procesamiento riguroso de grandes volúmenes de datos orientados a la solución de problemas ambientales.
+                    </p>
+                </div>
+            </section>
         </div>
-        <div class="about-text">
-            <h2>Sobre nosotros</h2>
-            <p>
-                Estudiantes pertenecientes al tercer semestre de la carrera de Ingeniería Ambiental en la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental (FIGEMPA) de la Universidad Central del Ecuador. Este trabajo de investigación se desarrolla dentro del marco académico de la asignatura de Estadística y Probabilidades, teniendo como propósito principal la aplicación de metodologías cuantitativas y el procesamiento riguroso de grandes volúmenes de datos orientados a la solución de problemas ambientales.
-            </p>
-        </div>
-    </section>
-</div>
 
     </div>
 
     <footer class="site-footer">
-    <div class="footer-grid">
-        <div class="footer-col">
-            <div class="footer-logo"><i class="fa-solid fa-droplet"></i> FIGEMPA</div>
-            <p>Universidad Central del Ecuador<br>Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo"><i class="fa-solid fa-droplet"></i> FIGEMPA</div>
+                <p>Universidad Central del Ecuador<br>Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="index.html">Inicio</a>
+                <a href="introduccion.html">Introducción</a>
+                <a href="descriptiva.html">Estadística descriptiva</a>
+                <a href="contacto.html">Contáctanos</a>
+            </div>
+            <div class="footer-col">
+                <h4>Proyecto</h4>
+                <p>Estadística y Probabilidades<br>Ingeniería Ambiental · 3er semestre<br>Datos: Kaggle</p>
+            </div>
         </div>
-        <div class="footer-col">
-            <h4>Navegación</h4>
-            <a href="index.html">Inicio</a>
-            <a href="introduccion.html">Introducción</a>
-            <a href="descriptiva.html">Estadística descriptiva</a>
-            <a href="contacto.html">Contáctanos</a>
+        <div class="footer-bottom">
+            © 2026 Proyecto académico · Universidad Central del Ecuador · Con fines educativos
         </div>
-        <div class="footer-col">
-            <h4>Proyecto</h4>
-            <p>Estadística y Probabilidades<br>Ingeniería Ambiental · 3er semestre<br>Datos: Kaggle</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        © 2026 Proyecto académico · Universidad Central del Ecuador · Con fines educativos
-    </div>
-</footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -611,6 +611,44 @@ body {
     color: #c9bda5;
 }
 
+/* Portada: advertencia arriba, título debajo */
+.hero-stack {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero-stack .academic-notice-container {
+    max-width: none;
+    margin: 0 0 40px 0;
+    padding: 28px 36px;
+}
+
+.hero-stack .hero-text {
+    text-align: center;
+}
+
+/* Botón Kaggle */
+.intro-block .btn-kaggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    padding: 10px 22px;
+    background: var(--primary);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 999px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.intro-block .btn-kaggle:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
     .hero-split { grid-template-columns: 1fr; gap: 30px; }
@@ -630,4 +668,5 @@ body {
     .band { padding: 40px 20px; }
     .motivation-section { padding: 22px 20px; }
     .objective-item { padding: 18px; }
+    .hero-stack .academic-notice-container { padding: 18px; }
 }
