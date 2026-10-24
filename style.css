@@ -15,7 +15,7 @@
     --line: #e0d2b8;
     --bg: #f6f0e2;          /* crema de fondo */
     --card: #fbf6ea;        /* fondo de tarjetas */
-    --band-hero: #efe5cf;   /* arena */
+    --band-hero: #e6d6b8;   /* arena */
     --band-hex: #d5ddc8;    /* salvia suave */
     --band-mot: #ead6c6;    /* arcilla suave */
     --band-about: #f0e7d3;
@@ -123,20 +123,29 @@ body {
 }
 
 .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 20px;
+    margin-bottom: 24px;
+    background: var(--primary);
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
     text-decoration: none;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s;
 }
 
 .pill:hover {
-    background: var(--primary);
-    color: #ffffff;
+    background: var(--secondary);
 }
 
 .hero-title {
     font-size: 44px;
     line-height: 1.15;
     font-weight: 800;
-    color: #3f3029;
+    color: #2b1f19;
     margin-bottom: 16px;
 }
 
@@ -147,7 +156,8 @@ body {
 }
 
 .hero-text .subtitle {
-    font-size: 17px;
+    font-size: 19px;
+    color: #5a4a40;
     margin-bottom: 26px;
 }
 
@@ -181,7 +191,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--primary);
     letter-spacing: 1px;
@@ -189,7 +199,7 @@ body {
 }
 
 .warning-text {
-    font-size: 16px;
+    font-size: 18px;
     color: #5a4a40;
     line-height: 1.6;
     text-align: justify;
@@ -669,4 +679,7 @@ body {
     .motivation-section { padding: 22px 20px; }
     .objective-item { padding: 18px; }
     .hero-stack .academic-notice-container { padding: 18px; }
+    .warning-badge { font-size: 16px; }
+.warning-text { font-size: 16px; }
+.hero-text .subtitle { font-size: 16px; }
 }
