@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIGEMPA - Gestión Ambiental</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <div class="dashboard-container home">
 
-        <!-- Encabezado: logo a la izquierda, menú en la barra superior -->
+        <!-- Encabezado: logo con escudo a la izquierda, menú a la derecha -->
         <header class="main-header header-flush">
-            <div class="logo">
-                <i class="fa-solid fa-droplet icon-brand"></i> FIGEMPA
-            </div>
+            <a class="logo" href="index.html">
+                <img class="logo-shield" src="img/escudo-uce.png" alt="Escudo de la Universidad Central del Ecuador">
+                <span class="logo-text">
+                    <span class="logo-title">FIGEMPA</span>
+                    <span class="logo-sub">Universidad Central del Ecuador</span>
+                </span>
+            </a>
             <nav class="nav-menu">
-    <a href="index.html">Inicio</a>
-    <a href="introduccion.html">Introducción</a>
-    <a href="descriptiva.html">Estadística<br>Descriptiva</a>
-    <a href="inferencial.html">Estadística<br>Inferencial</a>
-    <a href="regresion.html">Modelos de<br>Regresión</a>
-    <a href="machine-learning.html">Machine<br>Learning</a>
-    <a href="contacto.html" class="nav-cta">Contáctanos <span class="nav-cta-icon"><i class="fa-solid fa-arrow-right"></i></span></a>
-</nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="introduccion.html">Introducción</a>
+                <a href="descriptiva.html">Estadística<br>Descriptiva</a>
+                <a href="inferencial.html">Estadística<br>Inferencial</a>
+                <a href="regresion.html">Modelos de<br>Regresión</a>
+                <a href="machine-learning.html">Machine<br>Learning</a>
+                <a href="contacto.html" class="nav-cta">Contáctanos <span class="nav-cta-icon"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </nav>
         </header>
 
         <!-- Portada: advertencia arriba, título debajo -->
@@ -36,7 +40,7 @@
                         <i class="fa-solid fa-triangle-exclamation"></i> ADVERTENCIA ACADÉMICA
                     </div>
                     <p class="warning-text">
-                        Este proyecto y la información presentada tienen exclusivamente fines académicos y educativos. El contenido aquí expuesto se ha desarrollado con el propósito de apoyar procesos de aprendizaje, análisis y reflexión, sin perseguir objetivos comerciales ni constituir asesoría profesional. Cualquier dato, ejemplo o referencia utilizada sirve únicamente como material de estudio y no debe interpretarse como una recomendación formal para la toma de decisiones en contextos reales. El uso de esta presentación debe realizarse en el marco de actividades formativas, respetando siempre los derechos de autor y las normas éticas y académicas vigentes.
+                        Este proyecto y la información presentada tienen exclusivamente fines académicos y educativos. El contenido aquí expuesto se ha desarrollado con el propósito de apoyar procesos de aprendizaje, análisis y reflexión, sin perseguir objetivos comerciales ni constituir asesoría profesional. Cualquier dato, ejemplo o referencia utilizada sirve únicamente como material de estudio y no debe interpretarse como una recomendación formal para la toma de decisiones en contextos reales. El uso de esta plataforma debe realizarse en el marco de actividades formativas, respetando siempre los derechos de autor y las normas éticas y académicas vigentes.
                     </p>
                 </div>
 
@@ -47,6 +51,62 @@
                 </div>
 
             </section>
+        </div>
+
+        <!-- Zona con foto de fondo: solo los hexágonos -->
+        <div class="photo-zone">
+
+            <!-- Hexágonos -->
+            <div class="band band-hex">
+                <div class="hex-grid">
+
+                    <div class="hex-row">
+                        <a href="introduccion.html" class="hex-link">
+                            <div class="hex-outer"><div class="hex-inner">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <h3>INTRODUCCIÓN</h3>
+                                <span class="hex-btn">ACCEDER</span>
+                            </div></div>
+                        </a>
+
+                        <a href="descriptiva.html" class="hex-link">
+                            <div class="hex-outer"><div class="hex-inner">
+                                <i class="fa-solid fa-chart-column"></i>
+                                <h3>ESTADÍSTICA<br>DESCRIPTIVA</h3>
+                                <span class="hex-btn">ACCEDER</span>
+                            </div></div>
+                        </a>
+
+                        <a href="inferencial.html" class="hex-link">
+                            <div class="hex-outer"><div class="hex-inner">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <h3>ESTADÍSTICA<br>INFERENCIAL</h3>
+                                <span class="hex-btn">ACCEDER</span>
+                            </div></div>
+                        </a>
+                    </div>
+
+                    <div class="hex-row">
+                        <a href="regresion.html" class="hex-link">
+                            <div class="hex-outer"><div class="hex-inner">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <h3>MODELOS DE<br>REGRESIÓN</h3>
+                                <span class="hex-btn">ACCEDER</span>
+                            </div></div>
+                        </a>
+
+                        <a href="machine-learning.html" class="hex-link">
+                            <div class="hex-outer"><div class="hex-inner">
+                                <i class="fa-solid fa-brain"></i>
+                                <h3>MACHINE<br>LEARNING</h3>
+                                <span class="hex-btn">ACCEDER</span>
+                            </div></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <!-- Motivación del proyecto -->
@@ -70,6 +130,7 @@
                 </p>
             </section>
         </div>
+
 
         <!-- Sobre nosotros -->
         <div class="band band-about">
